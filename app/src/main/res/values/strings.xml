@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">CarGuide</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_first_fragment">hello_first_fragment</string>
+    <string name="next">next</string>
+    <string name="home_fragment_label">home_fragment_label</string>
+    <string name="photo_fragment_label">photo_fragment_label</string>
+    <string name="hello_Photo_fragment">hello_Photo_fragment</string>
+    <string name="previous">previous</string>
+    <string name="action_settings">settings</string>
+    <string name="Yeshurt">有傷亡</string>
+    <string name="Nohurt">無傷亡</string>
+    <string name="NoorYeshunt">有無傷亡?</string>
+    <string name="preview_area">Preview Area</string>
+    <string name="capture">Capture</string>
+    <string name="todo">TODO</string>
+    <string name="google_map">google_map</string>
+    <string name="Call_fragment_label">Call_fragment_label</string>
+    <string name="strike1">拍攝撞擊點</string>
+    <string name="strike2">拍攝車前方</string>
+    <string name="strike3">拍攝車後方</string>
+    <string name="strike4">拍攝車左方</string>
+    <string name="strike5">拍攝車右方</string>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/HomeFragment">
+
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.example.carguide.HomeFragment"
+        android:label="@string/home_fragment_label"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_CellFragment"
+            app:destination="@id/CallFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/CallFragment"
+        android:name="com.example.carguide.CallFragment"
+        android:label="@string/Call_fragment_label"
+        tools:layout="@layout/fragment_call">
+
+        <action
+            android:id="@+id/action_CallFragment_to_PhotoFragment"
+            app:destination="@id/PhotoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/PhotoFragment"
+        android:name="com.example.carguide.PhotoFragment"
+        android:label="@string/photo_fragment_label"
+        tools:layout="@layout/fragment_photo">
+
+        <!--        <action-->
+        <!--            android:id="@+id/action_PhotoFragment_to_HomeFragment"-->
+        <!--            app:destination="@id/HomeFragment" />-->
+    </fragment>
+</navigation>
