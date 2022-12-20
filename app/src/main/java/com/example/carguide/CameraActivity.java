@@ -1,14 +1,25 @@
 package com.example.carguide;
+import static android.graphics.Color.TRANSPARENT;
+
+import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.ContentValues;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.ColorDrawable;
 import android.media.Image;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.Looper;
+import android.provider.AlarmClock;
 import android.provider.MediaStore;
 import android.util.Size;
 import android.view.OrientationEventListener;
+import android.view.View;
+import android.view.Window;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -29,6 +40,7 @@ import androidx.camera.lifecycle.ProcessCameraProvider;
 import androidx.camera.view.PreviewView;
 import androidx.core.content.ContextCompat;
 import androidx.lifecycle.LifecycleOwner;
+import androidx.navigation.fragment.NavHostFragment;
 
 import com.google.common.util.concurrent.ListenableFuture;
 
@@ -106,11 +118,41 @@ public class CameraActivity extends AppCompatActivity  {
 
             ImageCapture.OutputFileOptions outputFileOptions = new ImageCapture.OutputFileOptions.Builder(file).build();
             imageCapture.takePicture(outputFileOptions, executor, new ImageCapture.OnImageSavedCallback () {
+
                 @Override
                 public void onImageSaved(@NonNull ImageCapture.OutputFileResults outputFileResults) {
                     new Handler(Looper.getMainLooper()).post(new Runnable() {
+
                         @Override
                         public void run() {
+                            Dialog alertphoto = new Dialog(CameraActivity.this);
+                            alertphoto.requestWindowFeature(Window.FEATURE_NO_TITLE);
+                            alertphoto.setContentView(R.layout.dialog_photo);
+                            alertphoto.getWindow().setBackgroundDrawable(new ColorDrawable(TRANSPARENT));
+                            alertphoto.show();
+
+                            ImageView img = (ImageView) alertphoto.findViewById(R.id.photo_check);
+                            Button cancel = (Button) alertphoto.findViewById(R.id.cancel);
+                            Button check_photo = (Button) alertphoto.findViewById(R.id.check_photo);
+
+                            Bitmap myfilepath = BitmapFactory.decodeFile(file.getAbsolutePath());
+                            img.setImageBitmap(myfilepath);
+
+                            check_photo.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View view) {
+
+                                }
+                            });
+                            cancel.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View view) {
+                                    alertphoto.dismiss();
+                                }
+                            });
+
+
+
                             Toast.makeText(CameraActivity.this, "Image Saved successfully", Toast.LENGTH_SHORT).show();
                         }
                     });
@@ -120,6 +162,7 @@ public class CameraActivity extends AppCompatActivity  {
                     error.printStackTrace();
                 }
             });
+
         });
     }
 

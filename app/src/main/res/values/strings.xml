@@ -31,5 +31,7 @@
     <string name="button_login">登入</string>
     <string name="login">登入</string>
     <string name="register">註冊</string>
+    <string name="cancel">取消</string>
+    <string name="photo_ok">確認</string>
 
 </resources>
