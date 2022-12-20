@@ -14,6 +14,9 @@
         <action
             android:id="@+id/action_HomeFragment_to_CellFragment"
             app:destination="@id/CallFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
     </fragment>
 
     <fragment
@@ -33,8 +36,14 @@
         android:label="@string/photo_fragment_label"
         tools:layout="@layout/fragment_photo">
 
-        <!--        <action-->
-        <!--            android:id="@+id/action_PhotoFragment_to_HomeFragment"-->
-        <!--            app:destination="@id/HomeFragment" />-->
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.example.carguide.LoginFragment"
+        android:label="@string/Login_fragment_label"
+        tools:layout="@layout/fragment_login">
+
     </fragment>
 </navigation>

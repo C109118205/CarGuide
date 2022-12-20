@@ -28,7 +28,7 @@
         android:requestLegacyExternalStorage="true">
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="*" />
+            android:value="AIzaSyASPsy3QstZyHSvrKCoXeFw0uLVp5t8-cY" />
 
         <activity android:name=".CameraActivity"/>
 
@@ -46,7 +46,7 @@
 
             <meta-data
                 android:name="android.app.lib_name"
-                android:value="AIzaSyASPsy3QstZyHSvrKCoXeFw0uLVp5t8-cY" />
+                android:value="" />
 
 
         </activity>
