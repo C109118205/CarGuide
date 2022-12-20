@@ -22,4 +22,8 @@
     <string name="strike3">拍攝車後方</string>
     <string name="strike4">拍攝車左方</string>
     <string name="strike5">拍攝車右方</string>
+    <string name="video_call">視訊報案</string>
+    <string name="call_119">119</string>
+    <string name="call_110">110</string>
+    <string name="next_call">下一步</string>
 </resources>
