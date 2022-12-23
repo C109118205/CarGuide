@@ -4,8 +4,8 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_first_fragment">hello_first_fragment</string>
     <string name="next">next</string>
-    <string name="home_fragment_label">home_fragment_label</string>
-    <string name="photo_fragment_label">photo_fragment_label</string>
+    <string name="home_fragment_label">車禍保險流程</string>
+    <string name="photo_fragment_label">車損拍攝</string>
     <string name="hello_Photo_fragment">hello_Photo_fragment</string>
     <string name="previous">previous</string>
     <string name="action_settings">settings</string>
@@ -16,8 +16,8 @@
     <string name="capture">Capture</string>
     <string name="todo">TODO</string>
     <string name="google_map">google_map</string>
-    <string name="Call_fragment_label">Call_fragment_label</string>
-    <string name="Login_fragment_label">Login_fragment_label</string>
+    <string name="Call_fragment_label">車禍引導</string>
+    <string name="Login_fragment_label">登入</string>
     <string name="strike1">拍攝撞擊點</string>
     <string name="strike2">拍攝車前方</string>
     <string name="strike3">拍攝車後方</string>
@@ -33,5 +33,16 @@
     <string name="register">註冊</string>
     <string name="cancel">取消</string>
     <string name="photo_ok">確認</string>
+    
+    <string name="menu_perpetrator">肇事者資料</string>
+    <string name="menu_insurance">保險專員</string>
+    <string name="menu_history">歷史車禍案件</string>
 
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
 </resources>
