@@ -33,7 +33,7 @@
     <string name="register">註冊</string>
     <string name="cancel">取消</string>
     <string name="photo_ok">確認</string>
-    
+
     <string name="menu_perpetrator">肇事者資料</string>
     <string name="menu_insurance">保險專員</string>
     <string name="menu_history">歷史車禍案件</string>
@@ -45,4 +45,5 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="Register_fragment_label">註冊</string>
 </resources>

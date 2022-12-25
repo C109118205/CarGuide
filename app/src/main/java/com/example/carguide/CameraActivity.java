@@ -109,6 +109,7 @@ public class CameraActivity extends AppCompatActivity  {
                 .build();
 
         preview.setSurfaceProvider(mPreviewView.createSurfaceProvider());
+
         Camera camera = cameraProvider.bindToLifecycle((LifecycleOwner)this, cameraSelector, preview, imageAnalysis, imageCapture);
 
         captureImage.setOnClickListener(v -> {
@@ -137,16 +138,23 @@ public class CameraActivity extends AppCompatActivity  {
 
                             Bitmap myfilepath = BitmapFactory.decodeFile(file.getAbsolutePath());
                             img.setImageBitmap(myfilepath);
+                            img.setRotation(90);
 
                             check_photo.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View view) {
-
+                                  finish();
+                                  alertphoto.dismiss();
                                 }
                             });
                             cancel.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View view) {
+                                    File DelFile = new File(file.getAbsolutePath());
+                                    if(DelFile.exists()){
+                                        DelFile.delete();
+                                        Toast.makeText(CameraActivity.this, "Image Deleted successfully", Toast.LENGTH_SHORT).show();
+                                    }
                                     alertphoto.dismiss();
                                 }
                             });

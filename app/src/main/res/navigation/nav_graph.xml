@@ -45,8 +45,19 @@
         android:label="@string/Login_fragment_label"
         tools:layout="@layout/fragment_login">
 
+        <action
+            android:id="@+id/action_LoginFragment_to_RegisterFragment"
+            app:destination="@id/RegisterFragment" />
     </fragment>
 
+    <fragment
+        android:id="@+id/RegisterFragment"
+        android:name="com.example.carguide.RegisterFragment"
+        android:label="@string/Register_fragment_label"
+        tools:layout="@layout/fragment_register">
+
+
+    </fragment>
 
     <fragment
         android:id="@+id/nav_gallery"

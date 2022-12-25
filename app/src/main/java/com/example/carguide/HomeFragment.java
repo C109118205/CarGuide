@@ -25,13 +25,8 @@ public class HomeFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
-
         binding = FragmentHomeBinding.inflate(inflater, container, false);
-
         View root = binding.getRoot();
-        binding.mapView.onCreate(savedInstanceState);
-        binding.mapView.onResume();
-
         try {
             MapsInitializer.initialize(requireActivity().getApplicationContext());
         } catch (Exception e) {
@@ -53,7 +48,8 @@ public class HomeFragment extends Fragment {
                 }
             }
         });
-
+        binding.mapView.onCreate(savedInstanceState);
+        binding.mapView.onResume();
         return root;
     }
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {

@@ -1,21 +1,20 @@
 package com.example.carguide;
 
+
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.fragment.NavHostFragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.carguide.databinding.FragmentLoginBinding;
+import com.example.carguide.databinding.FragmentRegisterBinding;
 
-public class LoginFragment extends Fragment {
 
-private FragmentLoginBinding binding;
-
+public class RegisterFragment extends Fragment {
+private FragmentRegisterBinding binding;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -25,19 +24,13 @@ private FragmentLoginBinding binding;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
-        binding = FragmentLoginBinding.inflate(inflater, container, false);
+        binding = FragmentRegisterBinding.inflate(inflater, container, false);
+
         View root = binding.getRoot();
         return root;
     }
+
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        binding.register.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                NavHostFragment.findNavController(LoginFragment.this)
-                        .navigate(R.id.action_LoginFragment_to_RegisterFragment);
-            }
-        });
-
     }
 }
