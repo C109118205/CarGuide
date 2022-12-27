@@ -36,7 +36,9 @@
     
     <string name="menu_perpetrator">肇事者資料</string>
     <string name="menu_insurance">保險專員</string>
+    <string name="menu_callfamily">聯絡家屬</string>
     <string name="menu_history">歷史車禍案件</string>
+    <string name="menu_editprofile">編輯個人資料</string>
 
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>

@@ -11,6 +11,8 @@
 
     <color name="login_black">#222222</color>
     <color name="layout_background_222222">#222222</color>
+    <color name="layout_background_000000">#000000</color>
+    <color name="layout_background_D9D9D9">#D9D9D9</color>
     <color name="login_background_gray">#606060</color>
     <color name="login_white">#ffffff</color>
     <color name="login_button_gray">#b6b2b1</color>
