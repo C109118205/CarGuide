@@ -12,6 +12,11 @@ import android.view.ViewGroup;
 
 import com.example.carguide.databinding.FragmentLoginBinding;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
 public class LoginFragment extends Fragment {
 
 private FragmentLoginBinding binding;
@@ -20,7 +25,6 @@ private FragmentLoginBinding binding;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     @Override

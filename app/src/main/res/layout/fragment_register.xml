@@ -31,7 +31,7 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/editTextTextPersonName2"
+                android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -64,37 +64,32 @@
                     android:text="性別" />
 
                 <RadioGroup
+                    android:id="@+id/radioGroup"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="5">
+                    android:layout_weight="5"
+                    android:orientation="horizontal">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:gravity="center">
+                    <RadioButton
+                        android:id="@+id/M"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="50dp"
+                        android:text="@string/men" />
 
-                        <RadioButton
-                            android:id="@+id/radioButton"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="男"
-                            android:paddingRight="50dp"/>
-
-                        <RadioButton
-                            android:id="@+id/radioButton2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="女"
-                            android:paddingRight="50dp"/>
-                    </LinearLayout>
+                    <RadioButton
+                        android:id="@+id/F"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="50dp"
+                        android:text="@string/women" />
 
                 </RadioGroup>
 
             </LinearLayout>
 
             <EditText
-                android:id="@+id/editTextPhone"
+                android:id="@+id/Phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -105,7 +100,7 @@
                 android:inputType="phone" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName3"
+                android:id="@+id/address"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/login_white"
@@ -116,7 +111,7 @@
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName4"
+                android:id="@+id/account"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -128,7 +123,7 @@
                 />
 
             <EditText
-                android:id="@+id/editTextTextPassword2"
+                android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/login_white"
@@ -139,7 +134,7 @@
                 android:inputType="textPassword" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/register_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"

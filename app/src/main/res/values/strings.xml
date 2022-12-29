@@ -48,4 +48,6 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="Register_fragment_label">註冊</string>
+    <string name="men">男</string>
+    <string name="women">女</string>
 </resources>

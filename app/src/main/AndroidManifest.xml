@@ -10,7 +10,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="28"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
-
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
     <queries>
         <package android:name="tw.gov.npa.videocall" />
     </queries>
@@ -28,7 +28,7 @@
         android:requestLegacyExternalStorage="true">
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="*" />
+            android:value="AIzaSyASPsy3QstZyHSvrKCoXeFw0uLVp5t8-cY" />
 
         <activity android:name=".CameraActivity"/>
 
