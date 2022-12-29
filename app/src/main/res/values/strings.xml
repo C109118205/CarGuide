@@ -36,13 +36,15 @@
 
     <string name="menu_perpetrator">肇事者資料</string>
     <string name="menu_insurance">保險專員</string>
+    <string name="menu_callfamily">聯絡家屬</string>
     <string name="menu_history">歷史車禍案件</string>
+    <string name="menu_editprofile">編輯個人資料</string>
+    <string name="menu_home">首頁</string>
 
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
 
-    <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="Register_fragment_label">註冊</string>

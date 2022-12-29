@@ -1,12 +1,16 @@
 package com.example.carguide;
 
+import android.content.DialogInterface;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.preference.PreferenceManager;
 import android.view.View;
 
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -19,6 +23,7 @@ import com.example.carguide.databinding.ActivityMainBinding;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -85,5 +90,36 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         return NavigationUI.navigateUp(navController, appBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    public void call_edit_userProfile(View view) {
+        Button dialog_user_profile_save,dialog_user_profile_cancel;
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        View v = getLayoutInflater().inflate(R.layout.dialog_user_profile,null);
+
+        dialog_user_profile_save = (Button) v.findViewById(R.id.dialog_user_profile_save);
+        dialog_user_profile_cancel = (Button) v.findViewById(R.id.dialog_user_profile_cancel);
+
+
+
+
+        builder.setView(v);
+        AlertDialog dialog = builder.create();
+
+        dialog_user_profile_save.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+            }
+        });
+
+        dialog_user_profile_cancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+            }
+        });
+
+        dialog.show();
     }
 }

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/layout_background_000000"
     tools:context=".PhotoFragment">
 
     <LinearLayout
@@ -23,6 +24,7 @@
                 android:id="@+id/strike1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/layout_gray_525252"
                 android:layout_marginStart="158dp"
                 android:layout_marginTop="70dp"
                 android:layout_marginEnd="159dp"
@@ -38,6 +40,7 @@
                 android:id="@+id/strike2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/layout_gray_525252"
                 android:layout_marginStart="158dp"
                 android:layout_marginTop="60dp"
                 android:layout_marginEnd="159dp"
@@ -52,6 +55,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="158dp"
                 android:layout_marginTop="60dp"
+                android:backgroundTint="@color/layout_gray_525252"
                 android:layout_marginEnd="159dp"
                 android:text="@string/strike3"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -65,6 +69,7 @@
                 android:layout_marginStart="158dp"
                 android:layout_marginTop="60dp"
                 android:layout_marginEnd="159dp"
+                android:backgroundTint="@color/layout_gray_525252"
                 android:text="@string/strike4"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
@@ -78,6 +83,7 @@
                 android:layout_marginStart="158dp"
                 android:layout_marginTop="60dp"
                 android:layout_marginEnd="159dp"
+                android:backgroundTint="@color/layout_gray_525252"
                 android:layout_marginBottom="70dp"
                 android:text="@string/strike5"
                 app:layout_constraintBottom_toBottomOf="parent"

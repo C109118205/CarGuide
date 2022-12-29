@@ -7,14 +7,25 @@
         <item
             android:id="@+id/HomeFragment"
             android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_perpetrator" />
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_insurance" />
+            android:title="@string/menu_home" />
+
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/menu_history" />
+
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_insurance" />
+
+        <item
+            android:id="@+id/nav_callfamily"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_callfamily" />
+
+
+
     </group>
+
 </menu>

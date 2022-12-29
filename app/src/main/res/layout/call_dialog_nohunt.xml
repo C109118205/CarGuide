@@ -4,7 +4,7 @@
     android:id="@+id/tabLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/transparent"
+    android:background="@color/layout_background_606060"
     android:gravity="bottom">
 
 
@@ -16,6 +16,7 @@
             android:id="@+id/cell_110"
             android:layout_width="190dp"
             android:layout_height="90dp"
+            android:backgroundTint="@color/layout_gray_383838"
             android:layout_marginStart="10dp"
             android:layout_marginTop="196dp"
             android:layout_marginEnd="10dp"
@@ -30,6 +31,7 @@
             android:id="@+id/video_call"
             android:layout_width="190dp"
             android:layout_height="90dp"
+            android:backgroundTint="@color/layout_gray_383838"
             android:layout_marginStart="10dp"
             android:layout_marginTop="50dp"
             android:layout_marginEnd="10dp"
