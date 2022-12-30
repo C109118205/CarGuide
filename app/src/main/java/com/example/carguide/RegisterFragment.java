@@ -2,10 +2,14 @@ package com.example.carguide;
 
 
 import android.accessibilityservice.GestureDescription;
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.fragment.NavHostFragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -54,7 +58,7 @@ private FragmentRegisterBinding binding;
                 String address =binding.address.getText().toString();
                 String account = binding.account.getText().toString();
                 String password = binding.password.getText().toString();
-
+                getDialog();
                 new Thread(new Runnable() {
                     @Override
                     public void run() {
@@ -71,13 +75,33 @@ private FragmentRegisterBinding binding;
                             statement.setString(6,password);
                             statement.setString(7,"1");
                             int rowsInserted = statement.executeUpdate();
+
                             connection.close();
                         } catch (SQLException e) {
                             e.printStackTrace();
                         }
+
+
                     }
                 }).start();
             }
+
         });
     }
+    private void getDialog() {
+        AlertDialog.Builder dialogregister = new AlertDialog.Builder(getActivity());
+        dialogregister.setCancelable(false);
+        dialogregister.setTitle("註冊成功");
+        dialogregister.setMessage("註冊成功");
+        dialogregister.setNegativeButton("確認", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                dialogInterface.dismiss();
+                NavHostFragment.findNavController(RegisterFragment.this)
+                        .navigate(R.id.action_RegisterFragment_to_LoginFragment);
+            }
+        });
+       dialogregister.create().show();
+    }
+
 }

@@ -56,7 +56,7 @@ public class CallFragment extends Fragment {
                     @Override
                     public void onClick(View view) {
                         Intent intent = new Intent(Intent.ACTION_DIAL);
-                        intent.setData(Uri.parse("tel:0123456789"));
+                        intent.setData(Uri.parse("tel:110"));
                         startActivity(intent);
 
                         Toast.makeText(getActivity(), "cell_110", Toast.LENGTH_SHORT).show();
@@ -66,7 +66,7 @@ public class CallFragment extends Fragment {
                     @Override
                     public void onClick(View view) {
                         Intent intent = new Intent(Intent.ACTION_DIAL);
-                        intent.setData(Uri.parse("tel:0123456789"));
+                        intent.setData(Uri.parse("tel:119"));
                         startActivity(intent);
 
                         Toast.makeText(getActivity(), "cell_119", Toast.LENGTH_SHORT).show();
@@ -107,7 +107,7 @@ public class CallFragment extends Fragment {
                     @Override
                     public void onClick(View view) {
                         Intent intent = new Intent(Intent.ACTION_DIAL);
-                        intent.setData(Uri.parse("tel:0123456789"));
+                        intent.setData(Uri.parse("tel:110"));
                         startActivity(intent);
 
                         Toast.makeText(getActivity(), "cell_110", Toast.LENGTH_SHORT).show();
