@@ -47,7 +47,6 @@ private FragmentRegisterBinding binding;
 
 
 
-
         binding.registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

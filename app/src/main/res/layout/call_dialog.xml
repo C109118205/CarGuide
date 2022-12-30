@@ -2,61 +2,75 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/tabLayout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/layout_background_606060"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:gravity="bottom">
 
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
 
         <Button
             android:id="@+id/cell_110"
+            style="@style/Widget.Material3.Button.Icon"
             android:layout_width="190dp"
             android:layout_height="90dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="196dp"
-            android:layout_marginEnd="10dp"
-            android:text="@string/call_110"
             android:backgroundTint="@color/layout_gray_383838"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.502"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:drawableTint="#E87676"
+            android:paddingLeft="30dp"
+            android:text="@string/call_110"
+            android:textColor="#E87676"
+            android:textSize="22sp"
+            app:icon="@drawable/ic_baseline_call_24_red" />
 
         <Button
             android:id="@+id/cell_119"
+            style="@style/Widget.Material3.Button.Icon"
             android:layout_width="190dp"
             android:layout_height="90dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="52dp"
             android:layout_marginEnd="10dp"
-            android:text="@string/call_119"
             android:backgroundTint="@color/layout_gray_383838"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.502"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cell_110" />
+            android:paddingLeft="30dp"
+            android:text="@string/call_119"
+            android:textColor="#D8FFCA"
+            android:textSize="22sp"
+            app:icon="@drawable/ic_baseline_call_24_green" />
 
         <Button
             android:id="@+id/video_call"
+            style="@style/Widget.Material3.Button.Icon"
             android:layout_width="190dp"
             android:layout_height="90dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="50dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="130dp"
-            android:text="@string/video_call"
             android:backgroundTint="@color/layout_gray_383838"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.502"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cell_119"
-            app:layout_constraintVertical_bias="0.0" />
+            android:paddingLeft="30dp"
+            android:text="@string/video_call"
+            android:textSize="20sp"
+            app:icon="@drawable/ic_baseline_video_call_24" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/call_cancel"
+            style="@style/Widget.Material3.Button.Icon"
+            android:background="#00000000"
+            app:icon="@drawable/ic_baseline_cancel_24"
+            app:iconSize="35dp"
+            app:iconGravity="textStart"
+            android:padding="0dp"
+            app:iconPadding="0dp"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"/>
+    </LinearLayout>
 
 </RelativeLayout>

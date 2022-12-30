@@ -17,8 +17,8 @@
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            app:srcCompat="@drawable/ic_launcher_foreground" />
+            android:layout_margin="30dp"
+            app:srcCompat="@drawable/ic_baseline_car_rental_24" />
 
         <TextView
             android:id="@+id/textView"
@@ -36,7 +36,7 @@
             android:layout_height="match_parent"
             android:background="@color/login_background_gray"
             android:orientation="vertical"
-            android:padding="5dp">
+            android:padding="10dp">
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/EditUserName"
@@ -44,12 +44,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="36dp"
                 android:hint="請輸入帳號"
+                app:boxBackgroundColor="@color/layout_background_D9D9D9"
                 android:padding="10dp"
                 app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Large"
                 app:boxStrokeWidth="0dp"
                 app:boxStrokeWidthFocused="0dp">
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
+                    android:textColor="@color/layout_background_000000"
                     android:layout_height="wrap_content" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -61,10 +63,12 @@
                 android:hint="請輸入密碼"
                 android:padding="10dp"
                 app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Large"
+                app:boxBackgroundColor="@color/layout_background_D9D9D9"
                 app:boxStrokeWidth="0dp"
                 app:boxStrokeWidthFocused="0dp">
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
+                    android:textColor="@color/layout_background_000000"
                     android:layout_height="wrap_content" />
 
             </com.google.android.material.textfield.TextInputLayout>

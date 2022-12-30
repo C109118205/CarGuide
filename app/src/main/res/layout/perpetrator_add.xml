@@ -31,7 +31,9 @@
             android:padding="10dp"
             app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Large"
             app:boxStrokeWidth="0dp"
+            app:boxBackgroundColor="@color/layout_background_D9D9D9"
             app:boxStrokeWidthFocused="0dp">
+
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
@@ -50,7 +52,15 @@
                 android:layout_weight="1"
                 android:layout_marginLeft="10dp"
                 android:layout_gravity="center"
-                app:srcCompat="@android:drawable/ic_dialog_info" />
+                app:srcCompat="@drawable/ic_baseline_female_24" />
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                app:srcCompat="@drawable/ic_baseline_male_24" />
 
             <TextView
                 android:id="@+id/textView25"
@@ -100,6 +110,7 @@
             android:padding="10dp"
             app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Large"
             app:boxStrokeWidth="0dp"
+            app:boxBackgroundColor="@color/layout_background_D9D9D9"
             app:boxStrokeWidthFocused="0dp">
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -112,6 +123,7 @@
             android:layout_height="wrap_content"
             android:hint="請輸入肇事者LINE_ID"
             android:padding="10dp"
+            app:boxBackgroundColor="@color/layout_background_D9D9D9"
             app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Large"
             app:boxStrokeWidth="0dp"
             app:boxStrokeWidthFocused="0dp">
@@ -128,6 +140,7 @@
             android:layout_height="wrap_content"
             android:hint="請輸入肇事者地址"
             android:padding="10dp"
+            app:boxBackgroundColor="@color/layout_background_D9D9D9"
             app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Large"
             app:boxStrokeWidth="0dp"
             app:boxStrokeWidthFocused="0dp">
@@ -142,6 +155,7 @@
             android:layout_height="wrap_content"
             android:hint="請輸入肇事者車牌號碼"
             android:padding="10dp"
+            app:boxBackgroundColor="@color/layout_background_D9D9D9"
             app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Large"
             app:boxStrokeWidth="0dp"
             app:boxStrokeWidthFocused="0dp">

@@ -51,6 +51,7 @@ public class CallFragment extends Fragment {
                 Button cell_110 = (Button) alertDialog.findViewById(R.id.cell_110);
                 Button cell_119 = (Button) alertDialog.findViewById(R.id.cell_119);
                 Button video_call = (Button) alertDialog.findViewById(R.id.video_call);
+                Button cancel = (Button) alertDialog.findViewById(R.id.call_cancel) ;
 
                 cell_110.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -87,6 +88,12 @@ public class CallFragment extends Fragment {
                         Toast.makeText(getActivity(), "video_call", Toast.LENGTH_SHORT).show();
                     }
                 });
+                cancel.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        alertDialog.dismiss();
+                    }
+                });
 
             }
         });
@@ -102,6 +109,7 @@ public class CallFragment extends Fragment {
 
                 Button cell_110 = (Button) alertDialog.findViewById(R.id.cell_110);
                 Button video_call = (Button) alertDialog.findViewById(R.id.video_call);
+                Button cancel = (Button) alertDialog.findViewById(R.id.call_cancel) ;
 
                 cell_110.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -127,6 +135,12 @@ public class CallFragment extends Fragment {
                             startActivity( intent );
                         }
                         Toast.makeText(getActivity(), "video_call", Toast.LENGTH_SHORT).show();
+                    }
+                });
+                cancel.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        alertDialog.dismiss();
                     }
                 });
             }

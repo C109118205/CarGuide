@@ -14,7 +14,7 @@
             android:id="@+id/imageView5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:srcCompat="@android:drawable/ic_menu_view" />
+            app:srcCompat="@drawable/ic_launcher_foreground" />
 
         <View
             android:layout_width="match_parent"
@@ -34,7 +34,7 @@
                 android:padding="10dp"
                 app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Large"
                 app:boxBackgroundColor="@color/layout_background_D9D9D9"
-                app:startIconDrawable="@android:drawable/ic_menu_edit"
+                app:startIconDrawable="@drawable/ic_baseline_person_24"
                 app:boxStrokeWidth="0dp"
                 app:boxStrokeWidthFocused="0dp"
                 >
@@ -71,7 +71,7 @@
                 app:boxBackgroundColor="@color/layout_background_D9D9D9"
                 app:boxStrokeWidth="0dp"
                 app:boxStrokeWidthFocused="0dp"
-                app:startIconDrawable="@android:drawable/ic_menu_call">
+                app:startIconDrawable="@drawable/ic_baseline_edit_location_24">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/user_information_address"
