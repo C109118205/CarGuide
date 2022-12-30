@@ -29,6 +29,7 @@ android {
     buildFeatures {
         viewBinding true
     }
+
 }
 
 dependencies {
@@ -56,5 +57,7 @@ dependencies {
 
     implementation 'org.mariadb.jdbc:mariadb-java-client:2.1.2'
     implementation files('libs/mssql-jdbc-11.2.1.jre11.jar')
+
+    implementation 'com.google.android.material:material:1.7.0'
 
 }

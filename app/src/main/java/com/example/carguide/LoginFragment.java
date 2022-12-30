@@ -52,8 +52,8 @@ private FragmentLoginBinding binding;
             @Override
             public void onClick(View view) {
 
-                String User_account = binding.EditUserName.getText().toString();
-                String User_password = binding.EditUserPassword.getText().toString();
+                String User_account = binding.EditUserName.getEditText().toString();
+                String User_password = binding.EditUserPassword.getEditText().toString();
                 Thread t1 = new Thread(new Runnable() {
                     @Override
                     public void run() {

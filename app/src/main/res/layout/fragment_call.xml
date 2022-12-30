@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/layout_background_000000"
+    android:background="@color/layout_background_222222"
     tools:context=".CallFragment">
 
     <LinearLayout
@@ -15,97 +15,99 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="200dp"
+            android:layout_margin="25dp"
             android:orientation="vertical">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_baseline_car_crash_24" />
+
+            <TextView
+                android:id="@+id/textview_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/NoorYeshunt"
+                android:textSize="45sp"
+                android:textStyle="bold"
+                android:textColor="@color/login_white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="車禍發生後請移動至安全區域" />
+
+            <View
                 android:layout_width="match_parent"
-                android:layout_height="200dp">
-
-                <TextView
-                    android:id="@+id/textview_photo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="100dp"
-                    android:layout_marginTop="100dp"
-                    android:layout_marginEnd="100dp"
-                    android:layout_marginBottom="90dp"
-                    android:text="@string/NoorYeshunt"
-                    android:textSize="50sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#000000" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:paddingTop="20dp"
             android:orientation="vertical">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <Button
+                android:id="@+id/button_Yeshurt"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/layout_gray_525252"
+                android:insetLeft="20dp"
+                android:insetTop="20dp"
+                android:insetRight="20dp"
+                android:insetBottom="20dp"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:paddingTop="30dp"
+                android:paddingBottom="30dp"
+                android:textSize="25sp"
+                android:text="@string/Yeshurt"
+                style="@style/Widget.Material3.Button.Icon"
+                app:icon="@drawable/ic_baseline_local_hospital_24"
+                android:textColor="@color/white" />
 
-                <Button
-                    android:id="@+id/button_Yeshurt"
-                    android:backgroundTint="@color/layout_gray_525252"
-                    android:layout_width="190dp"
-                    android:layout_height="100dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="120dp"
-                    android:insetLeft="20dp"
-                    android:insetTop="20dp"
-                    android:insetRight="20dp"
-                    android:insetBottom="20dp"
-                    android:text="@string/Yeshurt"
-                    android:textColor="@color/white"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/button_Nohunt"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.244" />
+            <Button
+                android:id="@+id/button_Nohunt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/layout_gray_525252"
+                android:insetLeft="20dp"
+                android:insetTop="20dp"
+                android:insetRight="20dp"
+                android:insetBottom="20dp"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:paddingTop="30dp"
+                android:paddingBottom="30dp"
+                android:textSize="25sp"
+                style="@style/Widget.Material3.Button.Icon"
+                app:icon="@drawable/ic_baseline_how_to_reg_24"
+                android:text="@string/Nohurt"
+                android:textColor="@color/white" />
 
-                <Button
-                    android:id="@+id/button_Nohunt"
-                    android:layout_width="190dp"
-                    android:layout_height="100dp"
-                    android:backgroundTint="@color/layout_gray_525252"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="120dp"
-                    android:insetLeft="20dp"
-                    android:insetTop="20dp"
-                    android:insetRight="20dp"
-                    android:insetBottom="20dp"
-                    android:text="@string/Nohurt"
-                    android:textColor="@color/white"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/button_Yeshurt"
-                    app:layout_constraintVertical_bias="0.203" />
+            <Button
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="right"
+                android:backgroundTint="@color/layout_gray_525252"
+                android:text="@string/next_call" />
 
-                <Button
-                    android:id="@+id/next"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="56dp"
-                    android:layout_marginEnd="120dp"
-                    android:text="@string/next_call"
-                    android:backgroundTint="@color/layout_gray_525252"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.735"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/button_Nohunt"
-                    app:layout_constraintVertical_bias="0.0" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
 
     </LinearLayout>

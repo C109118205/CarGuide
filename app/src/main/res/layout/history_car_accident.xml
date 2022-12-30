@@ -22,7 +22,7 @@
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/check_viewpager"
             android:layout_width="match_parent"
-            android:layout_height="300dp" >
+            android:layout_height="350dp" >
 
         </androidx.viewpager2.widget.ViewPager2>
 
@@ -40,9 +40,10 @@
             android:orientation="vertical">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
+                android:clickable="true"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -88,7 +89,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:orientation="horizontal">
@@ -112,7 +113,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:orientation="horizontal">

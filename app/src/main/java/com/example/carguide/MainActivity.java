@@ -100,9 +100,6 @@ public class MainActivity extends AppCompatActivity {
         dialog_user_profile_save = (Button) v.findViewById(R.id.dialog_user_profile_save);
         dialog_user_profile_cancel = (Button) v.findViewById(R.id.dialog_user_profile_cancel);
 
-
-
-
         builder.setView(v);
         AlertDialog dialog = builder.create();
 
